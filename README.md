@@ -89,8 +89,6 @@ Możesz sterować konkretnymi płaszczyznami (osiowa, strzałkowa, czołowa) lub
 - **„zostaw / zostać”**  
   Maksymalizacja wybranej płaszczyzny (tryb focus)
 
----
-
 ### 2. Zarządzanie punktami (landmarki)
 
 System obsługuje punkty anatomiczne (Markups Fiducials) i pozwala sterować ich widocznością.
@@ -102,8 +100,6 @@ System obsługuje punkty anatomiczne (Markups Fiducials) i pozwala sterować ich
 
 - **„ukryj [nazwa]”**  
   Ukrywa punkt o danej etykiecie (np. „ukryj guz”)
-
----
 
 ### 3. Obsługa liczb
 
