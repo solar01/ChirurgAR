@@ -6,7 +6,7 @@ import json
 class VoiceControl(ScriptedLoadableModule):
     def __init__(self, parent):
             ScriptedLoadableModule.__init__(self, parent)
-            self.parent.title = "Głosowe Sterowanie Slicerem" 
+            self.parent.title = "ChirurgAR" 
             self.parent.categories = ["Chirurgia AR"]
             self.parent.dependencies = []
             self.parent.helpText = "Moduł do sterowania głosowego."
