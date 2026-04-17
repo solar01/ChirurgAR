@@ -101,14 +101,9 @@ System obsługuje punkty anatomiczne (Markups Fiducials) i pozwala sterować ich
 - **„ukryj [nazwa]”**  
   Ukrywa punkt o danej etykiecie (np. „ukryj guz”)
 
-### 3. Obsługa liczb
-
-System rozpoznaje zarówno liczby słowne, jak i cyfry.
-
 ### Obsługiwane wartości:
 
 - słownie: *jeden, pięć, dziesięć, dwadzieścia*
-- cyfry: *1, 5, 10, 20*
 
 ### Przykład: „czołowa następna o dziesięć” → przesunięcie o 10 warstw w płaszczyźnie czołowej
 
