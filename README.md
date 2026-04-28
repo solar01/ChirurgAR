@@ -92,6 +92,48 @@ Możesz sterować konkretnymi płaszczyznami (osiowa, strzałkowa, czołowa) lub
 ### 2. Zarządzanie punktami (landmarki)
 
 System obsługuje punkty anatomiczne (Markups Fiducials) i pozwala sterować ich widocznością.
+### Dane testowe i Landmarki:
+
+W folderze `landmarki_json` znajdują się przykładowe punkty anatomiczne (pliki `.json`), które pozwalają przetestować komendy zarządzające widocznością punktów anatomicznych.  
+Punkty zostały przygotowane dla danych: **Zatoki 1, Seria nr 7**.
+
+### Jak wczytać dane do 3D Slicer?
+
+Aby system działał na tych samych współrzędnych co w przykładach, wykonaj poniższe kroki:
+
+1. Wczytanie obrazu (DICOM), dla którego zostały przygotowane punkty anatomiczne (**Zatoki 1, Seria nr 7**).
+
+2. Wczytanie Landmarków
+
+   2.1. Przeciągnij plik `.json` z folderu `landmarki_json` do okna programu. (Możesz również wczytać pliki przez wbudowany w Slicerze moduł `Add Data`).
+
+   2.2. Slicer automatycznie rozpozna wczytany plik jako **Markups**.
+
+
+3. Weryfikacja w module Markups
+
+   3.1. Przejdź do modułu **Markups** (ikona strzałki z punktami).
+
+   3.2. Upewnij się, że widoczne są etykiety punktów które wczytałeś:
+   - Blaszka sitowa  
+   - Tętnica sitowa  
+   - Nerw wzrokowy  
+
+4. Weryfikacja położenia puntków  
+
+    Punkty anatomiczne są zlokalizowane na konkretnych głębokościach.  
+    Wartości głębokości możesz wpisywać ręcznie bądź wykorzystać do tego sterowanie głosowe (po uprzednim uruchomieniu nasłuchiwania w module **ChirurgAR** i uruchomieniu skryptu `voice_client.py`), korzystając z komend do sterowania poszczególnymi płaszczyznami (następna/poprzednia).
+
+    Poniżej przedstawiono wartości suwaków płaszczyzn, na których można zoabzcyć wybrane punkty w widoku 2D.
+    
+    | Punkt anatomiczny | Axial (Czerwona) | Coronal (Zielona) | Sagittal (Żółta) |
+    |------------------|------------------|-------------------|------------------|
+    | Blaszka sitowa   | SP: -516.97 mm   | ASL: 109.35 mm    | LP: -5.11 mm     |
+    | Tętnica sitowa   | SP: -515.70 mm   | ASL: 117.92 mm    | LP: 4.35 mm      |
+    | Nerw wzrokowy    | SP: -518.01 mm   | ASL: 112.07 mm    | LP: -29.18 mm    |
+
+### Testowanie głosowe
+Po uruchomieniu skryptu `voice_client.py` i włączeniu nasłuchu w Slicerze, możesz przetestować system komendami:
 
 ### Komendy:
 
@@ -101,11 +143,21 @@ System obsługuje punkty anatomiczne (Markups Fiducials) i pozwala sterować ich
 - **„ukryj [nazwa]”**  
   Ukrywa punkt o danej etykiecie (np. „ukryj guz”)
 
+### Przykłady:
+
+- **"Pokaż blaszka sitowa"**  
+  → włącza widoczność punktu w przestrzeni 3D i 2D  
+
+- **"Ukryj tętnica sitowa"**  
+  → wyłącza znacznik, aby nie zasłaniał struktur  
+
+- **"Czołowa następna o dziesięć"**  
+  → przejście przez kolejne warstwy zatok w płaszczyźnie Coronal  
+
+
 ### Obsługiwane wartości:
 
 - słownie: *jeden, pięć, dziesięć, dwadzieścia*
-
-### Przykład: „czołowa następna o dziesięć” → przesunięcie o 10 warstw w płaszczyźnie czołowej
 
 ## Uwagi
 
