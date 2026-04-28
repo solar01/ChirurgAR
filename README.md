@@ -124,7 +124,7 @@ Aby system działał na tych samych współrzędnych co w przykładach, wykonaj 
     Punkty anatomiczne są zlokalizowane na konkretnych głębokościach.  
     Wartości głębokości możesz wpisywać ręcznie bądź wykorzystać do tego sterowanie głosowe (po uprzednim uruchomieniu nasłuchiwania w module **ChirurgAR** i uruchomieniu skryptu `voice_client.py`), korzystając z komend do sterowania poszczególnymi płaszczyznami (następna/poprzednia).
 
-    Poniżej przedstawiono wartości suwaków płaszczyzn, na których można zoabzcyć wybrane punkty w widoku 2D.
+    Poniżej przedstawiono wartości suwaków płaszczyzn, na których można zobaczyć wybrane punkty w widoku 2D.
     
     | Punkt anatomiczny | Axial (Czerwona) | Coronal (Zielona) | Sagittal (Żółta) |
     |------------------|------------------|-------------------|------------------|
