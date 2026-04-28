@@ -97,11 +97,19 @@ System obsługuje punkty anatomiczne (Markups Fiducials) i pozwala sterować ich
 W folderze `landmarki_json` znajdują się przykładowe punkty anatomiczne (pliki `.json`), które pozwalają przetestować komendy zarządzające widocznością punktów anatomicznych.  
 Punkty zostały przygotowane dla danych: **Zatoki 1, Seria nr 7**.
 
-### Jak wczytać dane do 3D Slicer?
+### Jak wczytać przykładowe dane DICOM do 3D Slicer?
 
 Aby system działał na tych samych współrzędnych co w przykładach, wykonaj poniższe kroki:
 
 1. Wczytanie obrazu (DICOM), dla którego zostały przygotowane punkty anatomiczne (**Zatoki 1, Seria nr 7**).
+
+    1.1. Przejdź do modułu **Add DICOM Data** (górny panel)
+
+    1.2. Wybierz **Import DICOM files** oraz wskaż folder z twoimi danymi.
+
+    1.3. Po zaimportowaniu dane powinny pojawić się w sekcji **DICOM database**.
+    
+    1.4. Wybierz odpowiednią serię (**Seria nr 7**) oraz wczytaj ją poprzez naciśnięcie przycisku **Load**. Poprawnie załadowana seria powinna widoczna być w sekcji **Loaded Data** modułu **Add DICOM Data**. Aby je wyświetlić należy przejść do widoku głównego (**Four-up view**).
 
 2. Wczytanie Landmarków
 
